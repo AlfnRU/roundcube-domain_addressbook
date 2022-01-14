@@ -1,0 +1,29 @@
+{
+    "name": "alfnru/domain_addressbook",
+    "type": "roundcube-plugin",
+    "description": "Plugin to create an Address Book from list of users in the SQL View",
+    "version": "1.0",
+    "license": "GPL-3.0-or-later",
+    "homepage": "https://github.com/AlfnRU/roundcube-domain_addressbook/",
+    "authors": [
+        {
+            "name": "Alexander Alferov",
+            "email": "a@alfn.ru",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "address",
+        "addressbook",
+        "contacts"
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://plugins.roundcube.net"
+        }
+    ],
+    "require": {
+        "roundcube/plugin-installer": ">=0.1.6"
+    }
+}
