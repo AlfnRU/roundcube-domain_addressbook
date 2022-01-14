@@ -8,7 +8,7 @@ VIEW domain_addressbook AS
         m.name AS name,
         SUBSTRING_INDEX(REPLACE(m.name,'  ',' '),' ',1) AS firstname,
         SUBSTRING_INDEX(SUBSTRING_INDEX(REPLACE(m.name,'  ',' '),' ',2),' ',-(1)) AS surname,
-        GROUP_CONCAT(a.address SEPARATOR ',') AS email,
+        GROUP_CONCAT(distinct a.address SEPARATOR ',') AS email,
         GROUP_CONCAT(distinct g.address SEPARATOR ',') AS groups,
         m.domain AS domain
     FROM
